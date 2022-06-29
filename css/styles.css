@@ -1,0 +1,104 @@
+:root{
+    --orange: #d95550;
+    --light-orange: #dd6662;
+    --very-light-orange: #f89e8b;
+    --gray: #55557b;
+    --white: #fff;
+    --black: #000;
+}
+html{
+	font-size: 62.5%  /* 62.5% == 10px*/;
+	box-sizing: border-box;
+}
+*, *::before, *::after{
+	box-sizing: inherit;
+}
+body{
+	font-size: 1.6rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: var(--orange);
+}
+/* estilos generales */
+h1{
+    margin: 10rem auto 0 auto;
+    color: var(--white);
+    text-align: center;
+}
+.form{
+    width: 40rem;
+    margin: 4.5rem auto;
+    text-align: center;
+}
+#inputTask{
+    padding: .8rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 2.4rem;
+    background-color: transparent;
+    color: var(--white);
+}
+#inputTask::placeholder{
+    color: var(--very-light-orange);
+}
+#inputTask:focus{
+    outline: none;
+}
+.btn-add{
+    font-size: 3.2rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: none;
+    text-align: center;
+    color: var(--orange);
+    background-color: var(--white);
+}
+.btn-add:hover{
+    cursor: pointer;
+    background-color: var(--very-light-orange);
+    color: var(--white);
+}
+.task-container{
+    width: 40rem;
+    margin: 0 auto;
+}
+.task{
+    background-color: var(--white);
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.8rem;
+    margin-bottom: 6px;
+    border-radius: 2px;
+}
+
+.btn-delete{
+    border: none;
+    background: none;
+}
+.btn-delete:hover{
+    cursor: pointer;
+}
+.stats{
+    width: 30rem;
+    margin: 2.5rem auto;
+    color: var(--very-light-orange);
+    text-align: center;
+    display: none;
+}
+.block{
+    display: block;
+}
+@media (max-width: 400px){
+    .form{
+        width: 30rem;
+    }
+    .task-container{
+        width: 29rem;
+    }
+    .task{
+        padding: 1.5rem;
+    }
+}
+
